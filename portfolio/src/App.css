@@ -1,0 +1,156 @@
+.header {
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Space between title and nav */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Add padding for spacing */
+  background-color: #107dbd;
+  text-decoration-color: #ccc;
+}
+
+.portfolio-title {
+  flex: 1; /* Allow title to take available space */
+  text-align: center; /* Center the title text */
+}
+.portfolio-title h1 {
+  color: white; /* Set text color to white */
+}
+
+.nav-links {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for navigation links */
+  gap: 20px; /* Space between links */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  color: hsla(0, 25%, 98%, 0.945); /* Set link color */
+}
+
+
+.nav-links a {
+  text-decoration: none; /* Remove underline from links */
+  color: hsla(0, 25%, 98%, 0.945); /* Set link color */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: hsla(0, 25%, 98%, 0.945); /* Set link color */
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+}
+.about-container {
+  display: flex;
+  justify-content: space-between; /* Space between text and image */
+  align-items: flex-start; /* Align items to the top */
+}
+
+.text-content {
+  flex: 1; /* Allows the text to take available space */
+  max-width: 60%; /* Limits the width of the text area */
+}
+
+.profile {
+  flex-shrink: 0; /* Prevents the profile picture from shrinking */
+  margin-left: 20px; /* Adds space between text and image */
+  animation: bob 4s infinite; /* Apply the bobbing animation */
+  align-self: first baseline;
+}
+
+.profile-picture {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+}
+
+/* Animation keyframes */
+@keyframes bob {
+  0%, 100% {
+      transform: translateY(0); /* Start and end at the original position */
+  }
+  50% {
+      transform: translateY(-10px); /* Move up at the midpoint */
+  }
+}
+.text-center {
+  text-align: center; /* Center the text */
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between project cards */
+  max-width: 1200px; /* Optional: limit width for better readability */
+  margin: auto; /* Center the container */
+  max-height: 1250px; 
+}
+
+.project-card {
+  background-color: #f9f9f9; /* Light background for cards */
+  border: 1px solid #ccc; /* Border for cards */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Inner spacing */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+}
+.project-image {
+  width: 100%; /* Make image responsive to the card width */
+  height: 200px; /* Set a fixed height for uniformity */
+  object-fit: cover; /* Crop the image to fit the box while preserving aspect ratio */
+  border-radius: 8px; /* Rounded corners for images */
+  margin-bottom: 10px; /* Space below the image */
+}
+.skills-section {
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+.skill-icon {
+  color: #007bff; /* Default color for icons */
+  margin-bottom: 10px; /* Spacing below the icon */
+}
+
+.skill-icon:hover {
+  color: #0056b3; /* Darker shade on hover */
+}
+
+h2 {
+  font-weight: bold;
+  color: #333; /* Darker color for the heading */
+}
+.contact-form {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+  background:rgb(214, 202, 179) ;
+}
+.contact-form .form-group{
+margin-bottom: 15px;
+
+  
+  }
+  .contact-form .btn-primary{
+    border-radius: 5px;
+    border:none;
+    width: 100%;
+  padding: 10px;
+  text-align: center;
+  }
+  .contact-form label{
+    font-weight: bold;
+  }
